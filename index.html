@@ -1,0 +1,42 @@
+<html>
+<meta charset="windows-1251">
+<link rel="stylesheet" href="bootstrap.min.css">
+<style>
+.lightgreen{background-color:lightgreen;}
+#loadstring{display:none;}
+</style>
+<div class="container">
+	<form id="form" method="post">
+	<div class="row">
+		<div class="col">
+			<div class="mb-3">
+				<label for="inputname" class="form-label">Имя*</label>
+				<input type="text" class="form-control" id="inputname" name="inputname" aria-describedby="infoname">
+				<div id="infoname" class="form-text"></div>
+			</div>
+			<div class="mb-3">
+				<label for="inputemail" class="form-label">E-Mail*</label>
+				<input type="text" class="form-control" id="inputemail" name="inputemail" aria-describedby="infoemail">
+				<div id="infoemail" class="form-text"></div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="mb-3>
+				<label for="textcomment" class="form-label">Комментарий*</label>
+				<textarea class="form-control" id="textcomment" name="textcomment"></textarea>
+				<div id="infocomment" class="form-text"></div>
+			</div>	
+		</div>
+	</div>
+		<button type="submit" class="btn btn-danger" id="submit" name="submit">Записать</button>
+	</form>
+	<div class="row"><p><center><h5>Выводим комментарии</h5></center></p></div>
+	<div class="row" id="loadstring">загрузка...</div>
+	<div class="row">
+		<div id="comments"><div id="removal"></div></div>
+	</div>
+</div>
+<script src="jquery-1.7.1.min.js"></script>
+<script src="jquery.validate.min.js"></script>
+<script src="ajax.js"></script>
+</html>
